@@ -1,0 +1,9 @@
+<html>
+{%for task in task_list %}
+{{task.priority}}
+{{ task.title }} 
+{{task.deadline|date:"Y-m-d H:i:s" }}
+{{task.comment}}
+<hr>
+{% endfor %}
+</html>
